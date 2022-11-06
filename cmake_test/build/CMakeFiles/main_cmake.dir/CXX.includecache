@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/balingshang/.amisc/cmake_test/main.cpp
+stdio.h
+-
+string.h
+-
+sys/types.h
+-
+unistd.h
+-
+iostream
+-
+malloc.h
+-
+
