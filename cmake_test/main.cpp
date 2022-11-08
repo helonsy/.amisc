@@ -29,10 +29,17 @@ int main(int argc, char **argv)
 {
 	printf("pid = %d\n", getpid());
 	std::cerr << "main_xxxx" << std::endl;
-	fun();
+//	fun();
 	std::cerr << "main_xxxxx2" << std::endl;
-	fun2();
+//	fun2();
 	std::cerr << "main_xxxxx3" << std::endl;
+
+	while(true)
+	{
+		std::cout << "xxxxxx" << std::endl;
+	}
+//	char c;
+//	std::cin >> c;
 
 	return 0;
 }

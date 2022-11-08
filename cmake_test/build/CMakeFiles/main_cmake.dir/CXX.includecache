@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/balingshang/.amisc/cmake_test/main.cpp
+/home/parallels/.amisc/cmake_test/main.cpp
 stdio.h
 -
 string.h
