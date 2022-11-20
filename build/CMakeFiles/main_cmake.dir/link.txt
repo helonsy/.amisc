@@ -1,0 +1,1 @@
+/usr/bin/g++   -fsanitize=address -fsanitize-recover=address -g -g  -rdynamic CMakeFiles/main_cmake.dir/main.cpp.o  -o main_cmake 

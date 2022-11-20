@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/parallels/.amisc/build",
+  "command": "/usr/bin/g++     -fsanitize=address -fsanitize-recover=address -g -g   -o CMakeFiles/main_cmake.dir/main.cpp.o -c /home/parallels/.amisc/cmake_test/main.cpp",
+  "file": "/home/parallels/.amisc/cmake_test/main.cpp"
+}
+]
