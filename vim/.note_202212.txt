@@ -1,0 +1,7 @@
+# 用 * 查找光标下的单词
+# 用 . 重复之前的命令
+# vim -u NONE -N
+# vim -u ~/.amisc/essential.vim
+# >G 表示从当前行到末尾缩进层级
+# s 等效于cl
+# S 等效于^C 当前行全部删除,进入Insert模式

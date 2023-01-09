@@ -1,0 +1,5 @@
+- 解压Lua的源码安装包
+- 安装源码之前  sudo apt-get install libreadline-dev
+- 然后在源码里   make 然后   sudo make install
+- 编译自己写的main.cpp    g++ main.cpp -llua -lm -ldl
+- 以上就是所有的

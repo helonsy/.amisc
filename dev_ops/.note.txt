@@ -1,0 +1,89 @@
+- file /bin/hostname
+- file hello.o
+- ldd hello
+- /data/
+- df
+- du -sh /mnt/*
+- mount /dev/sr0 /mnt
+- *.deb
+- rpm2cpio xxx.rpm | cpio -tv    # 预览  centos
+- dpkg
+- find -name "*.deb"
+- dpkg -i xxx.deb
+- dpkg -l xxx   # 查看某个包是否已经装上了
+- dpkg -l  # 列出装上的所有包
+- dpkg -l | wc -l  # 列出装上的所有包,统计出数量
+- dpkg -L xxx.deb  # 查看这包里的内容   这个使用的最多
+- dpkg -s xxx.deb   # 查看包里的描述信息
+- dpkg -P xxx.deb   # 卸载软件，卸载的更干净，配置文件也卸载了
+- dpkg -S /etc/issue  # 查看某个文件来自于哪个包
+- apt-get 是老版本   从16.04以后建议直接使用  apt
+- apt purge  # 删除软件更干净，移除软件包和配置文件
+   # 紧接着 apt autoremove nginx 可以删除干净 自动删除不需要的包
+- apt update # 刷新本地的存储库索引
+- cat /etc/os-release
+- /etc/apt/sources.list
+   # https://developer.aliyun.com/mirror/ubuntu?spm=xxxxxx
+   # 清华的源    mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
+- ubuntu 装好软件后会自动启动  比如nginx
+- /var/www/html/index.nginx-debian.html
+- apt list nginx  # 查看源上默认的包版本
+   - apt list apr*
+   - apt list | grep apr
+- apt-cache madison nginx # 查看源上所有的版本
+- apt-install nginx=1.17.10-0ubuntu1   # 装自己要的特定版本
+- apt install xxxx.deb   # 也可以直接装deb包
+- apt install unbuntu-desktop   # 可以包图形桌面装上
+- apt -y install apt-file  
+   # 可以查看某个文件来自于哪个包
+   - apt-file search -x '/sl$'
+- apt-cache stats
+- wget -P /usr/local/src http://xxxxxx
+- tree
+- echo $PAHT
+- ln -s /appa/httpd/bin/apachectl /usr/local/bin
+- ssh -p 9527 ip
+- lsblk   # 查看硬盘
+   - vda1 表示是虚拟的硬盘
+
+
+
+------------------
+COLOR="echo -e   \E{32;1m"
+END="\E[0m"
+
+. /etc/os-release
+if [ $ID = 'rocky' -o $ID = "centos"]; then
+	# 
+elif [ $ID = 'ubuntu' ];then
+    # 
+else
+	$COLOR"不支持此系统"$END
+fi
+------------------
+
+
+
+------------------
+if [! -f http-${HTTP_VERSION}].tar.bz2; then
+	wget -P /usr/local/src https://xxx
+fi
+------------------
+
+- lsb_release -a   # 查看Ubuntu的版本
+- sudo -i   # 切换到root账号
+
+
+# docker
+   namespce
+   cgroup
+   docker ps
+   docker version
+   docker pull nginx
+   docker run -d -it -p 80:80 nginx
+   ll /var/lib/containerd/io.containerd.runtime.v1.linux/moby/
+   docker exec -it 26456444 bash
+      cat /etc/issue  # 查看基于的Linux分支版本
+	  apt update && apt install procps iputils-ping net-tools -y
+      exit
+   iptables -t nat -vnL

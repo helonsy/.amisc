@@ -1,0 +1,27 @@
+hello 
+hello 
+hello 
+hello 
+hello 
+hello 
+11111
+11111
+11111
+11111
+11111
+11111
+11111
+11111
+11111
+11111
+11111
+11111
+
+
+
+
+{
+	xxxx {xxxx} xxxx
+}
+
+<a herf="http://progprog.com/dnvim/">Practical vim</a>

@@ -1,0 +1,24 @@
+# rebase
+   git branch bugFix
+   git checkout bugFix
+   git commit -m "bugFix"
+   git checkout main
+   git commit -m "main "
+   git checkout bugFix
+   git rebase main
+
+   git checkout main
+   git rebase bugFix  # 增长main的指针到bugFix
+
+# HEAD
+   cat .git/HEAD  
+   git symbolic-ref HEAD   # 如果HEAD指向的是一个引用，还可以git symbolic-ref HEAD查看它的指向
+
+   一开始HEAD指向分支名，通过 git checkout C2 让HEAD指向提交记录
+
+   ^向上移动一个提交记录   main^相当于main的父节点  main^^相当于main的第二个父节点
+      checkout main^
+	  checkout HEAD^
+   ~<num> 向上移动多个提交记录
+      git checkout HEAD~4
+	  git branch -f main HEAD~3  # 上面的命令将main分支强制指向HEAD的第3级父提交
