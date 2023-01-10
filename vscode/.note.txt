@@ -1,0 +1,57 @@
+# 快捷键 
+- ctrl+p 文件跳转
+- ctrl+shift+tab 在所有打开的文件中跳转
+- ctrl+shift+p 打开命令面板
+- ctrl+shift+o 跳转到文件中的符号
+- ctrl+t 搜索所有的符号，所有文件中的
+- ctrl+e 打开最近使用的文件
+- alt 点击文件，直接split新的文件
+- alt+click 增加一个新的光标
+- ctrl+alt+up、down 在当前光标的上方或者下方添加一个新的光标
+- alt+上下箭头 可以上下移动行
+- shift+alt+上下箭头 在上方下方添加一个光标
+- ctrl+shift+l 在光标所在单词出现的位置，都添加新的光标
+- ctrl+h 替换
+- 终端
+	- ctrl+` 打开和关闭终端
+	- ctrl+shift+` 新建终端
+- 查找
+	- Enter 跳到下一个搜索结果
+	- Shift+Enter 跳到上一个搜索结果
+	- 在搜索输入框 ctrl+enter可以多行搜索
+- 折叠
+	- shift+click 可以折叠或展开所有内部的代码快
+- alt+前后箭头 向前向后跳转
+- ctrl+n 新建文件 
+
+# 实用操作
+- 打开默认配置文件的json
+	- ctrl+shift+p 然后输入settings，就可以找到
+- 比较
+	- 选择两个文件，在右键菜单中Compare Selected来快速比较两个文件
+	- 命令行 code --diff <file1> <file2>
+- 命令行操作code
+	- code -n . 新建一个vscode打开窗口
+	- code -n 1.cpp 2.cpp dir/3.cpp 在一个空的目录里执行，会创建这些文件和文件夹，不过在打开vscode后要逐个保存
+		- 在windows的cmd也可以操作，而且cmd也支持mkdir
+- 在vscode的文件资源管理器中隐藏一些文件夹
+	"files.exclude": {
+		"**/.git": true
+		"**/.svn": true
+		"**/.hg": true
+		"**/.CVS": true
+		"**/.DS_Store": true
+	}
+- 打开设置
+	- 点击左下角设置按钮
+	- 点击设置 
+	- 右上角可以点击用Json打开
+
+- 在总文件夹按ctrl+f可以搜索文件名，点击过滤器，可以只显示匹配的文件和文件夹
+- 双击ESC可以推出禅模式
+- File->Auto save 快速开启和关闭自动保存功能
+- 先选中一个光标，然后按shift+alt可以列选择
+- 选中一个快捷键，右键可以show same keybindings显示出所有相同的快捷键
+- 快捷键more actions...可以显示所有默认的快捷键和用户自己设置的快捷键
+- 运行文本中的命令
+	- ctrl+shift+p 然后输入run select就可以选择了
